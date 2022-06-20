@@ -1,5 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 
+let enviro = require("./env");
+
 
 // Go to https://www.alchemyapi.io, sign up, create
 // a new App in its dashboard, and replace "KEY" with its key
@@ -9,7 +11,7 @@ const ALCHEMY_API_KEY = "nO0SK3FIHcDdFwgLbNFCtjPBS4-AJY9K";
 // To export your private key from Metamask, open Metamask and
 // go to Account Details > Export Private Key
 // Be aware of NEVER putting real Ether into testing accounts
-const GOERLI_PRIVATE_KEY = "<put the private key here>";
+const GOERLI_PRIVATE_KEY = enviro.GOERLI_PRIVATE_KEY; //"<put the private key here>";
 
 
 /**
